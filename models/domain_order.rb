@@ -1,0 +1,2 @@
+class DomainOrder
+end
