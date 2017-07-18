@@ -1,0 +1,1 @@
+class InvalidTestScore < StandardError; end
