@@ -1,10 +1,8 @@
 require_relative 'spec_helper'
 
 describe 'PathGenerator' do
-  let(:file1) { File.open('../fixtures/domain_order_standard', 'rb') }
-  let(:domain_order_cc) { DomainOrder.new(file1.read) }
-  let(:file2) { File.open('../fixtures/domain_order_abnormal', 'rb') }
-  let(:domain_order_alt) { DomainOrder.new(file2.read) }
+  let(:domain_order_cc) { DomainOrder.new('spec/fixtures/domain_order_standard.csv', ',') }
+  let(:domain_order_alt) { DomainOrder.new('spec/fixtures/domain_order_abnormal.csv', ',') }
   let(:scores) { { RF: 'K', RL: '1', RI: '4', L:'5' } }
 
   it 'should generate a literature path given a student and a domain order' do

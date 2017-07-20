@@ -10,7 +10,6 @@ class PathGenerator
   private
 
   def generate_path
-
-    {}
+    {} # TODO
   end
 end
