@@ -18,8 +18,8 @@ describe 'PathGenerator' do
   end
 
   it 'should be able to utilize non-traditional domain pathing' do
-    student = Student.new('Nerd', { GHOSTS: '2', FANFIC: 'K', STORIES_ABOUT_DOGS: '2', MARY_POTTER: '5', VAMPIRE: '5' } )
+    student = Student.new('Nerd', { GHOST_NONFICTION: '2', FANFIC: 'K', STORIES_ABOUT_DOGS: '2', MARY_POTTER: '5', VAMPIRE: '5' } )
     pathgen = PathGenerator.new(domain_order_alt,student)
-    expect(pathgen.path).to eq(%w(K.FANFIC, 2.FANFIC, 2.GHOST_NONFICTION, 2.STORIES_ABOUT_DOGS, 3.STORIES_ABOUT_DOGS))
+    expect(pathgen.path).to eq(%w(K.FANFIC 2.FANFIC 2.GHOST_NONFICTION 2.STORIES_ABOUT_DOGS 3.STORIES_ABOUT_DOGS))
   end
 end
