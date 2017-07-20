@@ -1,6 +1,12 @@
 require_relative 'spec_helper'
 
 describe 'Students' do
+  it 'can find a student by name' do
+    file_path = 'spec/fixtures/student_tests.csv'
+    students = Students.new(file_path, ',')
+    expect(students.name_search('Christopher Hayes')[0].name).to eq('Christopher Hayes')
+  end
+
   it 'should import students and their scores from a CSV file' do
     file_path = 'spec/fixtures/student_tests.csv'
     students = Students.new(file_path, ',')

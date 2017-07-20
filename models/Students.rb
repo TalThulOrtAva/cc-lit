@@ -1,3 +1,5 @@
+require 'CSV'
+
 class Students < Array
 
   def initialize(file_path, delimiter)

@@ -1,5 +1,4 @@
 require 'CSV'
-require 'pry'
 
 class DomainOrder
   attr_reader :path

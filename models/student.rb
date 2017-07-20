@@ -7,7 +7,6 @@ class Student
 
   def initialize(name, scores = {})
     scores.values.map{|score| raise InvalidTestScore unless VALID_SCORES.include? score}
-
     @name = name
     @scores = scores
   end

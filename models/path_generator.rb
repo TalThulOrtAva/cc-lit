@@ -10,6 +10,8 @@ class PathGenerator
   private
 
   def generate_path
-    {} # TODO
+    return domain_order.flat_path[0..4] if student.scores.empty?
+    binding.pry
+    {}
   end
 end
