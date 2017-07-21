@@ -15,8 +15,6 @@ students.each do |student|
   lesson_plans << [student.name] + PathGenerator.new(domain_order, student).path
 end
 
-puts lesson_plans
-
 CSV.open("data/#{output_file_name}.csv", 'wb') do |csv|
   lesson_plans.each{|lesson_plan| csv << lesson_plan}
 end
