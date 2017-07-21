@@ -32,6 +32,6 @@ Additional notes for the sake of myself and whoever happens to be interested.
 - Used TDD from beginning to end and ultimately the app uses very little code to do its job as a result, which I'm happy with.
 - I think the majority of the code is very easy to read and modify.
 ### What would you do next, given additional time?
-- I would refactor the PathGenerator so that one instance of it could generate lesson plans for multiple students. That was shortsighted.
+- I would refactor the PathGenerator so that one instance of it could generate lesson plans for multiple students. The highest level abstractions of the system could be somewhat simplified as a result. 
 - The console app is basically a 5 minute hack to show that the underlying system works. I wouldn't ship that app to... anyone, really. So, a modern interface would be a logical next step.
-- Depending on the needs of the user, I'd package the entire underlying system into a gem for reuse.
+- I would package the entire underlying system into a gem for reuse with multiple interfaces. 
