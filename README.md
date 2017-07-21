@@ -1,5 +1,5 @@
 # cc-lit
-This application will generate a series of courses that students should take to improve their competency in reading, given a domain order and a lists of students with optional test results.
+This application will generate a series of courses that students should take to improve their competency in reading, given a domain order and a list of students with optional test results.
 
 All commands in this doc assume your working directory is the project root.
 ## Install and Run Tests
